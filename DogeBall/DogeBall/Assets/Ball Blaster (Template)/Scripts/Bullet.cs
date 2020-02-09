@@ -45,6 +45,7 @@ namespace BallBlaster
 
             if (BoundHitEvent != null)
                 BoundHitEvent(transform);
+
         }
 
         public void EnableMovement()
@@ -61,6 +62,19 @@ namespace BallBlaster
             gameObject.SetActive(false);
         }
 
-    }
+        public void HitTarget()
+        {
+            Destroy(gameObject);
+        }
 
+        //private void OnTriggerEnter(Collider2D collisionStone)
+        //{
+        //    if (collisionStone.CompareTag(Tags.Stone))
+        //    {
+        //        Destroy(gameObject);
+
+        //    }
+
+        //}
+    }
 }

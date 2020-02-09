@@ -76,6 +76,7 @@ namespace BallBlaster
         {
             if (collision.CompareTag(Tags.Bullet) && !_gameManager.IsGameFinished)
             {
+
                 int newHp = _hp - collision.GetComponent<Bullet>().ShootPower;
                 if (OnBulletHitEvent != null)
                 {
