@@ -24,7 +24,7 @@ namespace BallBlaster
 
         public static void SetShootPower(int value) { PlayerPrefs.SetInt(_shootPowerKey, value); }
 
-        public static float GetShootSpeed() { return PlayerPrefs.GetFloat(_shootSpeedKey, 0.07f); }
+        public static float GetShootSpeed() { return PlayerPrefs.GetFloat(_shootSpeedKey, 0.1f); }
 
         public static void SetShootSpeed(float value) { PlayerPrefs.SetFloat(_shootSpeedKey, value); }
     }

@@ -43,6 +43,7 @@ namespace BallBlaster
         {
             DisableMovement();
 
+
             if (BoundHitEvent != null)
                 BoundHitEvent(transform);
         }
@@ -60,6 +61,8 @@ namespace BallBlaster
 
             gameObject.SetActive(false);
         }
+
+
 
     }
 
