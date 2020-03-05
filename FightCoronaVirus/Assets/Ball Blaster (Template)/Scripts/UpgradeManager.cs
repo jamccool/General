@@ -111,7 +111,7 @@ namespace BallBlaster
 
         private void UpdateSpeedText()
         {
-            _currentUpgradeValue.text = string.Format("{0:0.00} BPS", (1/Data.GetShootSpeed())-9);
+            _currentUpgradeValue.text = string.Format("{0:0.00} BPS", (1/Data.GetShootSpeed())-4);
         }
 
         private void UpdatePowerText()

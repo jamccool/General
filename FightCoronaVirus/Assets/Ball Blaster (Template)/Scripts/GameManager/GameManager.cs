@@ -20,7 +20,6 @@ namespace BallBlaster
         public event OnGameFinished GameFinishedEvent;
 
         public AdsManager adManager;
-        public GameObject rewardAdButton;
         public int adProbability = 15; //25 = 25% chance to show ad
 
         private IPlayerInput _input;
