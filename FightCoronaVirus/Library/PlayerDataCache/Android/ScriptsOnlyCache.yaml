@@ -33,22 +33,12 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
-    UnityEngine.Advertisements.Editor.dll:
-    - UnityEngine.Advertisements.Banner
-    - UnityEngine.Advertisements.CallbackExecutor
-    - UnityEngine.Advertisements.Placeholder
-    UnityEngine.Advertisements.dll:
-    - UnityEngine.Advertisements.Editor.Placeholder
-    UnityEngine.Monetization.Editor.dll:
-    - UnityEngine.Monetization.Placeholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -95,63 +85,63 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11142}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11228}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11590}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11682}
     - Class: 114
-      Script: {instanceID: 11686}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11864}
     - Class: 114
-      Script: {instanceID: 11990}
+      Script: {instanceID: 11950}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 12086}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12178}
     - Class: 114
-      Script: {instanceID: 12232}
+      Script: {instanceID: 12300}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 12380}
     - Class: 114
-      Script: {instanceID: 12636}
+      Script: {instanceID: 12394}
     - Class: 114
-      Script: {instanceID: 12642}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 12702}
+      Script: {instanceID: 12762}
     - Class: 114
-      Script: {instanceID: 12748}
+      Script: {instanceID: 12812}
     - Class: 114
-      Script: {instanceID: 12862}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 12870}
+      Script: {instanceID: 12872}
     - Class: 114
-      Script: {instanceID: 12908}
+      Script: {instanceID: 13000}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 13008}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13094}
+      Script: {instanceID: 13086}
     - Class: 114
-      Script: {instanceID: 17032}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 74130}
+      Script: {instanceID: 13232}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -207,6 +197,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 54cced885152d06928d346de2f106c9d
+    assemblyName: UnityEngine.Advertisements.Editor.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Banner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.Editor.dll
+    namespaceName: UnityEngine.Advertisements
+    className: CallbackExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.Editor.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -329,6 +337,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 21164660d3ba2a37d7c437a565871919
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsManager
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -437,6 +451,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.Editor.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -519,6 +539,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MakeTransparent
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -705,55 +731,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 54cced885152d06928d346de2f106c9d
-    assemblyName: UnityEngine.Advertisements.Editor.dll
-    namespaceName: UnityEngine.Advertisements
-    className: Banner
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.Editor.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.Editor.dll
-    namespaceName: UnityEngine.Advertisements
-    className: Placeholder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Monetization.Editor.dll
-    namespaceName: UnityEngine.Monetization
-    className: Placeholder
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
-  - hash:
-      serializedVersion: 2
-      Hash: 21164660d3ba2a37d7c437a565871919
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AdsManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MakeTransparent
   platform: 13
   scenePathNames:
   - Assets/Ball Blaster (Template)/Scenes/Main.unity
-  playerPath: C:/Github/General/FightCoronaVirus/CoronaHero v1.003.apk
+  playerPath: C:/Github/General/FightCoronaVirus/CoronaHero v1.004.apk
