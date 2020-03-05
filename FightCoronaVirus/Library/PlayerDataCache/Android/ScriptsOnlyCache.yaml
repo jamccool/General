@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdsManager
     - BallBlaster.BoundsGenerator
     - BallBlaster.Bullet
     - BallBlaster.CameraFollowOnGameStarted
@@ -20,6 +21,7 @@ ScriptsOnlyBuild:
     - BallBlaster.UniversalInput
     - BallBlaster.UpgradeManager
     - BallBlaster.Wheel
+    - MakeTransparent
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -31,12 +33,22 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.Advertisements.Editor.dll:
+    - UnityEngine.Advertisements.Banner
+    - UnityEngine.Advertisements.CallbackExecutor
+    - UnityEngine.Advertisements.Placeholder
+    UnityEngine.Advertisements.dll:
+    - UnityEngine.Advertisements.Editor.Placeholder
+    UnityEngine.Monetization.Editor.dll:
+    - UnityEngine.Monetization.Placeholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -93,49 +105,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 11590}
     - Class: 114
-      Script: {instanceID: 11660}
+      Script: {instanceID: 11658}
     - Class: 114
-      Script: {instanceID: 11688}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11992}
+      Script: {instanceID: 11990}
     - Class: 114
-      Script: {instanceID: 12076}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12234}
+      Script: {instanceID: 12232}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12638}
+      Script: {instanceID: 12636}
     - Class: 114
-      Script: {instanceID: 12644}
+      Script: {instanceID: 12642}
     - Class: 114
-      Script: {instanceID: 12692}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 12750}
+      Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 12870}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 13094}
+    - Class: 114
+      Script: {instanceID: 17032}
+    - Class: 114
+      Script: {instanceID: 74130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -319,7 +335,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 926ed947ce06554a975b61ac8065897d
     assemblyName: Assembly-CSharp.dll
     namespaceName: BallBlaster
     className: GameManager
@@ -589,7 +605,7 @@ ScriptsOnlyBuild:
     className: GameFinishedAppearingObject
   - hash:
       serializedVersion: 2
-      Hash: a74ab69ec78485e599f26d42f328b440
+      Hash: f9a29a2fcdc4b6638eacb7718f186509
     assemblyName: Assembly-CSharp.dll
     namespaceName: BallBlaster
     className: ScoreCounter
@@ -689,7 +705,55 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 54cced885152d06928d346de2f106c9d
+    assemblyName: UnityEngine.Advertisements.Editor.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Banner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.Editor.dll
+    namespaceName: UnityEngine.Advertisements
+    className: CallbackExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.Editor.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.Editor.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: CallbackExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Editor
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 21164660d3ba2a37d7c437a565871919
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MakeTransparent
   platform: 13
   scenePathNames:
   - Assets/Ball Blaster (Template)/Scenes/Main.unity
-  playerPath: C:/Github/General/FightCoronaVirus/CoronaHero v1.002.apk
+  playerPath: C:/Github/General/FightCoronaVirus/CoronaHero v1.003.apk

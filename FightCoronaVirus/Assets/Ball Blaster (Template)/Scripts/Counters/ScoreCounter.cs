@@ -18,7 +18,12 @@ namespace BallBlaster
         [Header("- Stone Generator -")]
         [SerializeField] private StoneGenerator _stoneGenerator;
 
-        private float _currentScore;
+        [Header("- Sound -")]
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioClip _newHighScore;
+
+
+        public static float _currentScore;
 
         #region MonoBehaviour
 
@@ -53,6 +58,7 @@ namespace BallBlaster
             // Animate current score text
             if (_currentScoreAnimator)
                 _currentScoreAnimator.SetTrigger(_hitTriggerParameter);
+
         }
 
         private void UpdateCurrentScoreText()
@@ -64,8 +70,23 @@ namespace BallBlaster
         private void OnGameFinished()
         {
             if ((int)_currentScore > Data.GetBestScore())
+            {
                 Data.SetBestScore((int)_currentScore);
+                PlaySound(_newHighScore);
+            }
+
+
         }
+
+        private void PlaySound(AudioClip clip)
+        {
+            if (_audioSource)
+            {
+                _audioSource.clip = clip;
+                _audioSource.Play();
+            }
+        }
+
 
     }
 

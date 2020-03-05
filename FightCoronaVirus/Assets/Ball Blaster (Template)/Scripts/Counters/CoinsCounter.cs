@@ -60,5 +60,8 @@ namespace BallBlaster
             _coinsText.text = NumberFormatter.ToKMB(Data.GetCoinsCount());
         }
 
+
+
+
     }
 }

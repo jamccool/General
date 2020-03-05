@@ -16,7 +16,7 @@ namespace BallBlaster
 
         public static void SetBestScore(int newBestScore) { PlayerPrefs.SetInt(_bestScoreKey, newBestScore); }
 
-        public static int GetCoinsCount() { return PlayerPrefs.GetInt(_coinsCountKey, 1000); }
+        public static int GetCoinsCount() { return PlayerPrefs.GetInt(_coinsCountKey, 0); }
 
         public static void SetCoinsCount(int newCoinsCount) { PlayerPrefs.SetInt(_coinsCountKey, newCoinsCount); }
 

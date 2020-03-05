@@ -104,7 +104,7 @@ namespace BallBlaster
             UpdateCoinsText();
         }
 
-        private void UpdateCoinsText()
+        public void UpdateCoinsText()
         {
             _coinsCountText.text = NumberFormatter.ToKMB(Data.GetCoinsCount());
         }
